@@ -15,13 +15,12 @@ body {
 
 h1 
 {
-color: #00bfa5;
+    color: #00bfa5;
 }
-.navbar {
- 
-  min-height: 70px;
-  margin-bottom: 0px;
- 
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #00bfa5;
+    background-color: transparent;
 }
 
 .intro {
@@ -32,7 +31,7 @@ color: #00bfa5;
 
 .workgrey
 {
-    padding: 30px;
+    padding:30px;
     background: -moz-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
     background: -o-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
     background: -ms-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
@@ -40,10 +39,16 @@ color: #00bfa5;
     width: 100%;
 }
 
+.workwhite
+{
+    padding:30px;
+    background: #fbfcfc;
+    width: 100%;
+}
+
 a:link    {color:#7F8483; background-color:transparent; text-decoration:none;}
 a:visited {color:#7F8483; background-color:transparent; text-decoration:none}
 a:hover   {color:#00bfa5; background-color:transparent;text-decoration: none}
-a:active  {color:#00bfa5; background-color:transparent;}
 
 h1 {
     font-size: 3em;
@@ -59,7 +64,8 @@ p.normal {
 }
 
 p.light {
-    font-weight: lighter;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 p.thick {
@@ -73,6 +79,7 @@ p.thicker {
 .center{
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 10px;
 } 
 
 .aboutme {
@@ -96,6 +103,38 @@ p.thicker {
     background-color: #fff;
 }
 
+.textwrap{
+    float: right;
+    margin: 10px;
+}
+
+.textwrapleft{
+    float: left;
+    margin: 0px 10px;
+}
+
+.viewwork {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-size: 18px;
+  padding: 15px 30px 15px 30px;
+  border: solid #00bfa5 1px;
+  text-decoration: none;
+  background-color: #fff;
+  text-align: center;
+}
+
+.viewwork:link {
+    background-color: #fff;
+}
+
+.viewwork:hover {
+    border: solid #00bfa5 2px;
+    color: #00bfa5;
+    background-color: #fff;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
@@ -109,12 +148,25 @@ p.thicker {
 p.copyright
 {
   margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 5px;
   font-size: 12px;
   color: #fff;
   text-align: center;
 }
 
+ul.client{
+    font-size:1.5em;
+}
+
+ul.responsibility li{
+ padding: 5px;
+}
+
+.space{
+    padding: 10px;
+    max-width: 100%;
+}
 ul.work {
     padding:0;
     list-style:none;
@@ -125,6 +177,7 @@ ul.work li {
     float:left;
     margin:20px 25px;
 }
+
 
 .avatar {
     -webkit-box-shadow: 0px 0px 0px 3px #fff;
@@ -137,7 +190,7 @@ ul.work li {
     border-radius: 50px// half the avatar size
     width: 150px;
     height: 150px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 
@@ -157,9 +210,11 @@ form
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    max-width: 100%;
 }
 
 input {
+    max-width: 100%;
 	color:#3c3c3c;
 	font-size: 14px;
 	line-height: 22px;
@@ -193,6 +248,7 @@ input:focus{
 }
 
 textarea {
+    max-width: 100%;
     color:#3c3c3c;
     font-size: 14px;
     width: 500px;
@@ -270,7 +326,7 @@ ul.social-buttons {
 
 ul.social-buttons li {
   display: inline-block;
-  margin: 15px 10px 0px 0px;;
+  margin: 15px 20px 0px 0px;;
 }
 
 ul.social-buttons li a {
@@ -309,12 +365,11 @@ ul#icon li:hover a {
   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
 }
 
-
 /*work section*/
 .view {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+    width: 350px;
+    height: 350px;
+    margin: 10px 20px 10px 0px;
     float: left;
     border: 10px solid #fff;
     overflow: hidden;
@@ -327,8 +382,8 @@ ul#icon li:hover a {
 }
 
 .view .mask, .view .content {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -349,16 +404,16 @@ ul#icon li:hover a {
     font-size: 17px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
 .view p {
-    text-align:center;
+    text-align:left;
     font-size: 14px;
     position: relative;
-    width: 95%;
+    width: 90%;
     color: #fff;
-    margin: 0px;
-    padding: 10px 20px 20px;    
+    margin: 20px;
+    padding: 10px 20px 20px 10px;    
 }
 
 .view a.info {
@@ -384,8 +439,8 @@ ul#icon li:hover a {
 	transition: all 0.3s ease-in-out; 
 }
 .view-work .mask { 
-	background-color:#000;
-	transform: translateX(-300px);
+	background-color:#333;
+	transform: translateX(-350px);
 	opacity: 1;
 	transition: all 0.4s ease-in-out; 
 }
@@ -404,7 +459,7 @@ ul#icon li:hover a {
 	transform: translateX(0px);
 }						
 .view-work:hover img { 
-	transform: translateX(300px);
+	transform: translateX(350px);
 	transition-delay: 0.1s;
 }
 .view-work:hover p{
