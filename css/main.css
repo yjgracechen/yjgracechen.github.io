@@ -13,14 +13,24 @@ body {
       /* Margin bottom by footer height */
 }
 
-h1 
-{
-    color: #00bfa5;
+.logo{
+max-height: 40px;
+    max-width: 40px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #00bfa5;
     background-color: transparent;
+}
+
+.navbar-brand { 
+  padding: 5px 15px;
+
+}
+
+h1 
+{
+    color: #00bfa5;
 }
 
 .intro {
@@ -59,6 +69,9 @@ p {
     color: #333;
 }
 
+ul.qualification{
+    font-size:1.5em;
+}
 p.normal {
     font-weight: normal;
 }
@@ -123,6 +136,7 @@ p.thicker {
   text-decoration: none;
   background-color: #fff;
   text-align: center;
+  max-width: 100%;
 }
 
 .viewwork:link {
@@ -140,7 +154,7 @@ p.thicker {
   bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here    color: #06b9a1;*/
-  height: 120px;
+  height: 150px;
   background-color: #333;
   font-color:#fff;
 }
@@ -200,7 +214,7 @@ ul.contact {
 
 ul.contact li {
     list-style: none;
-    margin: 15px 0px 0px 15px; 
+    margin: 10px 0px 0px 15px; 
 }
 
 form
@@ -220,7 +234,7 @@ input {
 	line-height: 22px;
 	background-color:#fff;
 	padding: 13px 13px 13px 20px;
-    margin: 10px auto 20px 0px;
+    margin: 10px 0px 0px 0px;
 	width:400px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -365,6 +379,26 @@ ul#icon li:hover a {
   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
 }
 
+.workimage {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px 30px 10px 0px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #f2f2f2 no-repeat center center;
+}
+
+.workimage img {
+    display: block;
+    max-width:100%;
+}
+
+
 /*work section*/
 .view {
     width: 350px;
@@ -377,7 +411,7 @@ ul#icon li:hover a {
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
-    background: #f2f2f2 url(../images/bgimg.jpg) no-repeat center center;
+    background: #f2f2f2 no-repeat center center;
     padding: 10px 10px 10px 10px;
 }
 
@@ -410,7 +444,6 @@ ul#icon li:hover a {
     text-align:left;
     font-size: 14px;
     position: relative;
-    width: 90%;
     color: #fff;
     margin: 20px;
     padding: 10px 20px 20px 10px;    
